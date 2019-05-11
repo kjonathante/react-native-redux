@@ -35,7 +35,7 @@ function Main(props) {
               />
             </View>
           ) : (
-            <View style={styles.alternativeLayoutButtonContainer} key={id}>
+            <View key={id} style={styles.alternativeLayoutButtonContainer}>
               <Button title={byIds[id].message} onPress={() => handlePressEdit(id)} />
               <Button title="Delete" color="red" onPress={() => deleteMessage(id)}/>
             </View>

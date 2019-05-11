@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, TextInput, Button } from "react-native";
 
-const AddMessage = (props) => {
+const EditMessage = (props) => {
   const [input, setInput] = useState(props.value)
 
   const handlePressSave = () => {
@@ -37,4 +37,4 @@ const AddMessage = (props) => {
   )
 }
 
-export default AddMessage
+export default EditMessage
