@@ -7,7 +7,7 @@ import {
   updateMessageInjector
 } from "../redux/actions/messages";
 
-import Main from "../components/Main.js";
+import Main from "../components/Main";
 
 const mapStateToProps = state => ({
   messagesState: state.messages

@@ -1,21 +1,12 @@
 import React, { useState } from "react";
-import { TextInput, StyleSheet, View, Text, Button, TouchableHighlight } from "react-native";
-
-// import PropTypes from "prop-types";
+import { StyleSheet, View, Text, Button } from "react-native";
 
 import { SUCCESS } from "../redux/actions/ActionTypes";
-
 import AddMessage from "../components/AddMessage"
 import EditMessage from "../components/EditMessage"
 
-// import MessagePage from "../components/MessagePage";
-// import Repos from "../components/Repos";
-// import NavBar from "../components/NavBar";
-// import User from "./User";
-
 function Main(props) {
   const [editId, setEditId] = useState("");
-  const [input, setInput] = useState("");
 
   const { byIds, allIds, status } = props.messagesState;
   const { createMessage, deleteMessage, updateMessage } = props;
